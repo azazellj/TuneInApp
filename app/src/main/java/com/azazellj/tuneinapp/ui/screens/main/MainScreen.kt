@@ -45,7 +45,7 @@ fun MainScreen(
     var isLoading by remember { mutableStateOf(false) }
     var currentPlayingAudio by remember { mutableStateOf<Element.Audio?>(null) }
 
-    // TODO:
+    // TODO: check correct handling for player lifecycle
     var player: ExoPlayer? = null
 
     LaunchedEffect(state) {
